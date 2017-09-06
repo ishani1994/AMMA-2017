@@ -1,0 +1,11 @@
+#For downloading data and then performing
+csvfle <- read.csv("/Users/ishani/Desktop/AMMA/Data/Data_2017/Ind_Pak_rivalry.csv")
+View(csvfle)
+counter<- 0
+rivalry_df<- data.frame(csvfle)
+View(rivalry_df)
+for(i in 1:nrow(rivalry_df))
+{
+  counter<- counter + rivalry_df$IND[i]
+}
+print(counter)
